@@ -56,6 +56,84 @@ a {
 /* LOGIN & SIGN UP PAGE */
 
 /* CALENDAR PAGE */
+.calendar-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.calendar-content{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    width: 75rem;
+    height: 40rem;
+}
+
+.calendar-row{
+    display: flex;
+    width: 75rem;
+    height: 35rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-card{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    height: 35rem;
+}
+
+.task-top{
+    color: #fff;
+    border-radius: 1rem 1rem 0 0;
+    border: 2px solid #000;
+    width: 20rem;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(195.27deg, #3FC284 8.37%, #59AB84 86.66%);
+}
+
+.task-bottom{
+    border-radius: 0 0 1rem 1rem;
+    border: 2px solid #000;
+    width: 20rem;
+    height: 26rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.task-card-divider{
+    border-bottom: 2px #000 solid;
+    width: 18rem;
+    height: 2px;
+}
+
+.calendar-divider{
+    border-left: 2px black solid;
+    height: 40rem;
+    width: 2px;
+    height: 35rem;
+}
+
+.calendar-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40rem;
+}
 
 /* FORECAST PAGE */
 
