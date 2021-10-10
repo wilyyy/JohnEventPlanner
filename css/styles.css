@@ -21,6 +21,82 @@ a {
     box-sizing: border-box;
 }
 
+/*Nav Bar */
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 6rem;
+    font-family: 'Ubuntu', serif;
+    padding-bottom: 1rem;
+    background: linear-gradient(180deg, #111F1C 90.62%, rgba(208, 227, 205, 0) 100%);
+}
+
+.nav-row{
+    display: flex;
+    height: 2rem;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.john-logo{
+    border:none;
+    background: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FF7A00;
+}
+
+.john-logo:hover{
+    text-shadow: 0px 0px 10px rgba(255, 122, 0, 0.9);
+    transform: translate(0, -0.25rem);
+    text-decoration: underline;
+    transition: 1s; 
+}
+
+.nav-link-row{
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+}
+
+.nav-item{
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    border:none;
+    background: none;
+}
+
+.nav-item:hover{
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
+    transform: translate(0, -0.25rem);
+    text-decoration: underline;
+    transition: 1s;  
+}
+
+.nav-divider{
+    border-left: 2px #FF7A00 solid;
+    height: 2rem;
+}
+
+.avatar-cont{
+    border-radius: 25rem;
+    width: 4rem;
+    height: 4rem;
+    overflow: hidden;
+    position: relative;
+    top: -2rem;
+
+}
+
+.avatar{
+    width: 5rem;
+    height: 6rem;
+}
+
+/*Buttons */
 .orange-button{
     display: flex;
     justify-content: center;
@@ -38,7 +114,7 @@ a {
 
 .orange-button:hover{
     background-color: #FFAF65;
-    transition: 0.7s;
+    transition: 1s;
 
 }
 
@@ -59,13 +135,13 @@ a {
 
 .black-button:hover{
     background-color: #657E78;  
-    transition: 0.7s;
+    transition: 1s;
 }
 
 @media screen and (max-width:800px){
     .orange-button{
         width: 8rem;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     .black-button{
@@ -73,6 +149,7 @@ a {
         font-size: 1rem;
     }
 }
+
 
 
 /* LANDING PAGE */
@@ -209,7 +286,6 @@ a {
     justify-content: flex-start;
     padding-left: 25px;
 }
-
 
 .social-media-cont{
     display: flex;
@@ -362,23 +438,27 @@ a {
 }
 
 
+
 /* FORECAST PAGE */
 .forecast-cont{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .forecast-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .event-info-cont{
     display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding:50px;
+    width: 80%;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .event-info-card{
@@ -389,6 +469,7 @@ a {
     max-width: 20rem;
     max-height: 35rem;
     justify-content: space-evenly;
+    margin: 4rem 0;
 }
 
 .event-info-top{
@@ -420,8 +501,68 @@ a {
     color: #FF7A00;
 }
 
+@media screen and (max-width:800px){
+    .event-info-cont{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
 
 /* COST SPLITTER PAGE */
 
 
+
 /* EVENT CREATION PAGE */
+.event-creation-cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.event-creation-content{
+    font-family: Ubuntu, sans-serif;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-creation-content h1{
+    font-size: 3rem;
+    font-weight: 600;
+    width: 80%;
+    text-align: left;
+}
+
+.event-creation-content form{
+    width: 80%;
+    border: 3px solid #3FC284;
+    border-radius: 32px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.event-creation-content input{
+    width: 100%;
+    height: 2.5rem;
+    font-size: 1.25rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    border-bottom: 1px #757575 solid;
+}
+
+.event-creation-content h2{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+#create-event-button{
+    align-self: center;
+}
