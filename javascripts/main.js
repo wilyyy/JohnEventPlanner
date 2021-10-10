@@ -16,23 +16,23 @@ onload = () => {
     let loginButton = document.getElementById("login-button");
     let loginForm = document.getElementById("login-form");
 
+    let loginInfo;
+
     function ParseData(){
         if (testAjaxLoginObject.readyState == 4){
             ajaxLoginInfo = testAjaxLoginObject.responseText;
             loginInfo = JSON.parse(ajaxLoginInfo);
-            // console.log(loginInfo);
-            // console.log(loginInfo[0].username);
-            // console.log(loginInfo[0].password);
         }
+
+        loginButton.onclick = function(){
+            if (loginUsername.value === loginInfo[0].username && loginPassword.value === loginInfo[0].password){
+                loginButton.href="calendar.html";
+            } else{
+                alert("Username/Password combination not found");
+            }
+        }
+ 
     }
 
-    loginButton.onclick = function(){
-        if (loginUsername.value === "BCIT" && loginPassword.value === "Shoulderboulders"){
-            loginButton.href="calendar.html";
-        } else{
-            alert("Username/Password combination not found");
-        }
-    }
     
-
 }
