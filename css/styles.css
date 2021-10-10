@@ -258,20 +258,6 @@ a {
     font-family: 'Ubuntu', sans-serif;
 }
 
-/* signup page */
-.signup-cont{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(225deg, #067A53, #3FC284);
-    padding: 20px;
-    overflow: hidden;
-    position: relative;
-    z-index: -2;
-}
-
 @media screen and (max-width:800px){
     .white-line-break{
         width: 10rem;
@@ -377,6 +363,62 @@ a {
 
 
 /* FORECAST PAGE */
+.forecast-cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.forecast-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-info-cont{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding:50px;
+}
+
+.event-info-card{
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    max-width: 20rem;
+    max-height: 35rem;
+    justify-content: space-evenly;
+}
+
+.event-info-top{
+    width: 20rem;
+    height: 26rem;
+    border-radius: 1rem 1rem 0 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: linear-gradient(195.27deg, #3FC284 8.37%, #59AB84 86.66%);
+}
+
+.event-info-bottom{
+    width: 20rem;
+    height: 13rem;
+    border-radius: 0 0 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-wrap;
+    background-color: #141414;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.event-info-bottom h2{
+    color: #FF7A00;
+}
 
 
 /* COST SPLITTER PAGE */
