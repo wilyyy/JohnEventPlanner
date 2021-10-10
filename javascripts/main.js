@@ -7,8 +7,7 @@ onload = () => {
     testAjaxLoginObject.onreadystatechange = ParseData;
     testAjaxLoginObject.send(null);
 
-    let ajaxLoginInfo
-    let errorBoxText;
+    let ajaxLoginInfo;
 
     //Login Elements
     let loginUsername = document.getElementById("login-email");
@@ -30,7 +29,6 @@ onload = () => {
                 alert("Username/Password combination not found");
             }
         }
- 
     }
 
 }
