@@ -14,7 +14,6 @@ onload = () => {
     let loginUsername = document.getElementById("login-email");
     let loginPassword = document.getElementById("login-password");
     let loginButton = document.getElementById("login-button");
-    let loginForm = document.getElementById("login-form");
 
     let loginInfo;
 
@@ -34,5 +33,4 @@ onload = () => {
  
     }
 
-    
 }
