@@ -7,7 +7,7 @@ font-family: 'Ubuntu', sans-serif;
 */
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Roboto&family=Ubuntu:wght@300&display=swap');
 
-html, body{
+html, body, h2{
     padding: 0;
     margin: 0;
 }
@@ -173,6 +173,22 @@ a {
 
 
 /* COST SPLITTER PAGE */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
 
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    border: 1px solid red;
+}
 
 /* EVENT CREATION PAGE */
