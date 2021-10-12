@@ -6,19 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CostSplitter - John</title>
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <script src="javascripts/main.js"></script>
+    <script src="javascripts/costsplitter.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <main>
         <form>
             <h2>Cost Splitter</h2>
-            <label for="people">Number of People</label>
-            <input type="number" id="people" />
-            <label for="totalcost">Total Cost</label>
-            <input type="text" id="totalcost" />
-            <input type="button" value="Calculate" onclick="calcCost()"/>
-            <label for="indcost">Cost Per Attendee</label>
-            <input type="text" id="indcost" />
+            <section>
+                <label for="people">Number of People</label>
+                <input type="number" id="people" />
+            </section>
+            <section>
+                <label for="totalcost">Total Cost</label>
+                <input type="text" id="totalcost" />
+            </section>
+            <input id="calcbutton" type="button" value="Calculate" onclick="calcCost()"/>
+            <section>
+                <label for="indcost">Cost Per Attendee</label>
+                <input type="text" id="indcost" />
+            </section>
         </form>
     </main>
 </body>
